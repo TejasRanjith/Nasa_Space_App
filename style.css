@@ -38,18 +38,23 @@ body {
 #p_about {
     margin-top: 40px;
     padding-top: 20px;
-    font-size: 22px;
+    font-size: 27px;
+    text-indent: 50px;
 }
 /* Style the header */
 .header {
     display: block;
-    justify-content: center;
     align-items: center;
+    font-size: 23px;
+}
+
+.underline{
+    color: #308aff;
 }
 
 .heading{
     font-family: 'Dela Gothic One', cursive;
-    font-size: 46px;
+    font-size: 56px;
     margin-bottom: 10px;
     display: flex;
     color: #ffffff;
@@ -60,6 +65,7 @@ body {
 .navigation {
     display: flex;
     justify-content: center;
+    /* padding-left: 20px; */
 }
 
 /* Center the heading */
@@ -107,26 +113,25 @@ header h1 {
 
 nav ul {
     list-style: none;
+    justify-content: space-between;
+
     
 }
 
 nav ul li {
     display: inline;
-    margin-right: 0px;
-    background-color: #000;
-    padding: 5px;
+    margin-right: 30px;
+    background-color: #308aff;
+    padding: 10px;
     border-radius: 25px;
     width: 20px;
     height: 20px;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li :hover {
-    display: inline;
-    /* margin-right: 20px;s */
-    background-color: #0029cd;
-    padding: 5px;
-    border-radius: 25px;
-
+nav ul li:hover {
+    background-color: #ffffff;
+    color: #000;
 }
 
 nav ul li a {
@@ -134,6 +139,11 @@ nav ul li a {
     color: #ffffff;
     font-weight: bold;
 }
+
+nav ul li a:hover {
+    color: #000000;
+}
+
 
 /* Style the main sections with a white background */
 section {
@@ -170,29 +180,39 @@ section ul li {
     background-color: rgba(0, 68, 255, 0);
     margin-bottom: 20px;
     border-radius: 5px;
+    list-style: none;
 }
 
 section ul li img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 20px;
     object-fit: cover;
+}
+section ul li p {
+    font-size: 25px;
 }
 
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #308aff;
     color: #000;
     text-decoration: none;
     border: none;
     border-radius: 20px;
     font-weight: bold;
+    font-size: 20px;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dest_heading{
+    color: #fff;
 }
 
 /* Style the footer */
@@ -205,10 +225,25 @@ footer {
 
 .mars_img{
     width: 100%;
-    height: 80%;
+    height: 58%;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 20px;
 }
+
+.hotels_img{
+    width: 100%;
+    height: 58%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.moon_img{
+    width: 100%;
+    height: 58%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
  .h_about{
     font-size: 40px;
     font-weight: bold;
@@ -216,4 +251,9 @@ footer {
 
     margin-bottom: 20px;
     color: #ffffff;
+ }
+
+ .dest_heading{
+    font-size: 30px;
+    padding-top: 10px;
  }
