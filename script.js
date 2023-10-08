@@ -7,11 +7,11 @@ $(function(){
           return;
 if ((st > lastScrollTop) && (lastScrollTop>0)) {
        // downscroll code
-      $("header").css("top","0px");
+      $("header1").css("top","0px");
   
    } else {
       // upscroll code
-      $("header").css("top","0px");
+      $("header1").css("top","0px");
    }
        lastScrollTop = st;
     });
